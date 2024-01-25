@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;900&family=Roboto:wght@400;500;700;900&family=Sen:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <div class="navbar">
+
+        <div class="navbar-container">
+            <!-- LOGO -->
+            <div class="logo-container">
+                <img src="Image/logo1.jpg" alt="logo" class="logoimg">
+                <h3 class="logo">One Stop<br> Movie</h3>
+            </div>
+            <!-- menu  -->
+            <div class="menu-container">
+                <a href="#Trending" class="menu">Trending</a>
+                <a href="#Bollywood" class="menu">Bollywood</a>
+                <a href="#TVShows" class="menu">TV Shows</a>
+                <div class="dropdown">
+                    <p>More</p>
+
+                    <div class="dropdown-content">
+                        <a href="#hollywood">Hollywood</a>
+                        <a href="#tollywood">Tollywood</a>
+                        <a href="#webseries">Web series</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="blank"></div>
+
+            <!-- right side login  -->
+            <div class="profile-container">
+                
+                 
+
+                <div class="profile-dropdown">
+                    <div class="profile-info" id="open-modal">
+                        <img src="Image/profileimg.jpg" alt="profile" class="profile-icon">
+                        <div class="profile-name">Tannavi</div>
+                    </div>
+
+                    <div class="dropdown-content" id="profile-dropdown-content">
+                        <div>
+                            <p id="usernamee"></p>
+                            <p>Member Since: January 2022</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <button id="show-logout" class="button">Log Out</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HERO wala box  -->
+
+    <div class="container">
+
+        <div class="search-container">
+
+            <div class="feature-container" style=" background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(15, 15, 15)),  url(Image/searchbg2.jpg);
+                 background-repeat: no-repeat; width: 100%; background-size: cover; ">
+
+
+
+
+
+                <div class="hero-content">
+                    <h1 id="h1" class="hero">Welcome to One Stop Movie</h1>
+                    <h3 id="h3" class="hero">Explore, discover, and immerse yourself in a world of cinematic
+                        wonders—all
+                        in one stop.<br> Your journey into the realm of film begins here.</h3>
+                    <div class="searchbar">
+                        <input id="searchbox" type="text" placeholder="Search for a movie, tv show, person......"
+                            value="">
+                        <input id="searchsub" class="submit" type="submit" value="Search">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        
+
+
+        <!-- movie list 1 -->
+
+        <div id="Trending" class="movie-list-container1">
+            <h1 class="movie-list-title">Trending</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga1.jpg" alt="">
+                        <span class="movie-list-item-title">Oppenheimer</span>
+                        <p class="movie-list-item-desc">A film by Crishtopher Nolan</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                        <span class="movie-list-item-title">MRG</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="MRG"></i>
+
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                        <span class="movie-list-item-title">Plane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+
+                        <i class="fas fa-heart watchlist-icon" data-movie="Plane"></i>
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                        <span class="movie-list-item-title">Jawan</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                        <span class="movie-list-item-title">Yellow Wallpaper</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                        <span class="movie-list-item-title">MRG</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                        <span class="movie-list-item-title">Plane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                        <span class="movie-list-item-title">Jawan</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                        <span class="movie-list-item-title">Yellow Wallpaper</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            At
+                            hic fugit similique accusantium.</p>
+                        <div class="movie-list-item-rating">
+                            <span class="rating-text"></span>
+                            <!-- Star icons for rating -->
+                            <span class="rating-stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+
+
+                    </div>
+
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+
+            </div>
+
+
+
+
+
+            <!-- movie list2  -->
+            <div id="Bollywood" class="movie-list-container2">
+                <h1 class="movie-list-title">BollyWood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imgb1.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imgb2.webp" alt="">
+                            <span class="movie-list-item-title">3 Idiots</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgb3.jpg" alt="">
+                            <span class="movie-list-item-title">Super 30</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgb4.jpeg" alt="">
+                            <span class="movie-list-item-title">12th Fail</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgb5.jpg" alt="">
+                            <span class="movie-list-item-title">Chhinchore</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                            <span class="movie-list-item-title">MRG</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                            <span class="movie-list-item-title">Plane</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                            <span class="movie-list-item-title">Yellow Wallpaper</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+            </div>
+
+
+            <!-- movie list 3 -->
+            <div id="hollywood" class="movie-list-container3">
+                <h1 class="movie-list-title">HollyWood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgc1.jpg" alt="">
+                            <span class="movie-list-item-title">Barbie</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgc2.webp" alt="">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgc3.jpg" alt="">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgc4.jpg" alt="">
+                            <span class="movie-list-item-title">1917</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgc5.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                            <span class="movie-list-item-title">MRG</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                            <span class="movie-list-item-title">Plane</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                            <span class="movie-list-item-title">Yellow Wallpaper</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+            </div>
+        </div>
+        <!-- hero 2  -->
+
+        <div class="container">
+            <div class="middle-container">
+                <div class="feature-container" style=" background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(15, 15, 15)),  url(Image/bgmiddle.jpg);
+                 background-repeat: no-repeat; width: 100%; background-size: cover; ">
+
+                </div>
+
+            </div>
+
+            <!-- movie list  4-->r
+            <div id="tollywood" class="movie-list-container4">
+                <h1 class="movie-list-title">TollyWood</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgd1.jpg" alt="">
+                            <span class="movie-list-item-title">Jailer</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgd2.jpg" alt="">
+                            <span class="movie-list-item-title">Leo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgd3.jpg" alt="">
+                            <span class="movie-list-item-title">Abhimanyu</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgd4.webp" alt="">
+                            <span class="movie-list-item-title">Bigil</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgd5.cms" alt="">
+                            <span class="movie-list-item-title">Alla vantumkan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                            <span class="movie-list-item-title">MRG</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                            <span class="movie-list-item-title">Plane</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                            <span class="movie-list-item-title">Yellow Wallpaper</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+
+                        </div>
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+            </div>
+
+
+            <!-- movie list 5 -->
+            <div id="webseries" class="movie-list-container5">
+                <h1 class="movie-list-title">Web Series</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imge1.jpg" alt="">
+                            <span class="movie-list-item-title">Asur 2</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imge2.jpg" alt="">
+                            <span class="movie-list-item-title">Ishq Express</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imge3.jpg" alt="">
+                            <span class="movie-list-item-title">Wednesday</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imge4.jpeg" alt="">
+                            <span class="movie-list-item-title">The family Man</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imge5.jpg" alt="">
+                            <span class="movie-list-item-title">Gutar Gu</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                            <span class="movie-list-item-title">MRG</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                            <span class="movie-list-item-title">Plane</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                            <span class="movie-list-item-title">Yellow Wallpaper</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+            </div>
+
+
+            <!-- movie list 6 -->
+            <div id="TVShows" class="movie-list-container6">
+                <h1 class="movie-list-title">TV Shows</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgf1.webp" alt="">
+                            <span class="movie-list-item-title">You</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgf2.jpg" alt="">
+                            <span class="movie-list-item-title">Queen's Gambit</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgf3.jpg" alt="">
+                            <span class="movie-list-item-title">Ratched</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgf4.jpg" alt="">
+                            <span class="movie-list-item-title">Sabrina</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/imgf5.jpg" alt="">
+                            <span class="movie-list-item-title">Dead to me</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <!-- Star icons for rating -->
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga2.jpg" alt="">
+                            <span class="movie-list-item-title">MRG</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga3.jpg" alt="">
+                            <span class="movie-list-item-title">Plane</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga4.jpg" alt="">
+                            <span class="movie-list-item-title">Jawan</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="Image/imga5.jpg" alt="">
+                            <span class="movie-list-item-title">Yellow Wallpaper</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                At
+                                hic fugit similique accusantium.</p>
+                            <div class="movie-list-item-rating">
+                                <span class="rating-text"></span>
+                                <span class="rating-stars">
+                                    <i class="fas fa-star" data-rating="1"></i>
+                                    <i class="fas fa-star" data-rating="2"></i>
+                                    <i class="fas fa-star" data-rating="3"></i>
+                                    <i class="fas fa-star" data-rating="4"></i>
+                                    <i class="fas fa-star" data-rating="5"></i>
+                                </span>
+                            </div>
+                            <i class="fas fa-heart watchlist-icon" data-movie="Oppenheimer"></i>
+
+                        </div>
+
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="search-container">
+                <div class="feature-containerbtm" style=" background:linear-gradient(to top, rgba(255, 255, 255, 0), rgb(16, 16, 16)), url(Image/bottombgbg.webp);
+                 background-repeat: no-repeat; width: 100%; background-size: cover; ">
+                    <div class="hero-content">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bottom-contact">
+            <div class="bottom-left-info">
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@onestopmovie.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="about-us">
+                    <h3>About Us</h3>
+                    <p>Thanks for visiting One Stop Movie, your go-to destination for discovering and exploring a vast collection of
+                        movies and TV shows. Immerse yourself in the world of cinematic wonders—all in one stop.</p>
+                </div>
+            </div>
+            <div class="inta">
+                <div class="bottom-ryt">
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook icon"></i>
+
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <i class="fa-brands fa-twitter icon"></i>
+
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram icon"></i>
+
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube icon"></i>
+
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                    </a>
+                    <a href="mailto:info@example.com">
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="additional-info">
+            <p>&copy; 2024 One Stop Movie. All rights reserved.</p>
+            <p>Designed by Tannavi</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="indscript.js"></script>
+
+<script>
+
+// watchlist 
+    
+document.addEventListener("DOMContentLoaded", function () {
+
+const watchlistIcons = document.querySelectorAll('.watchlist-icon');
+
+
+watchlistIcons.forEach(icon => {
+  icon.addEventListener('click', (e) => {
+    const movieTitle = e.target.getAttribute('data-movie');
+    toggleWatchlist(icon);
+    alert(`Toggled "${movieTitle}" in your watchlist!`);
+  });
+});
+});
+
+
+function toggleWatchlist(icon) {
+icon.classList.toggle('active');
+}
+
+// dropdown 
+document.addEventListener("DOMContentLoaded", function () {
+        var openModalButton = document.getElementById("open-modal");
+        var dropdownContent = document.getElementById("profile-dropdown-content");
+
+        // Toggle the display of the dropdown content when clicking on profile info
+        openModalButton.addEventListener("click", function () {
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        });
+
+        // Close the dropdown content when clicking outside the dropdown
+        window.addEventListener("click", function (event) {
+            if (!event.target.matches('.profile-dropdown') && !event.target.matches('.profile-info')) {
+                dropdownContent.style.display = "none";
+            }
+        });
+    });
+
+
+
+
+// rating 
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+const ratingStars = document.querySelectorAll('.rating-stars i');
+
+
+ratingStars.forEach(star => {
+    star.addEventListener('click', (e) => {
+        const rating = e.target.getAttribute('data-rating');
+        setRating(star, rating);
+    });
+});
+});
+
+function setRating(star, rating) {
+const parent = star.parentNode;
+const stars = parent.children;
+
+for (let i = 0; i < stars.length; i++) {
+    if (i < rating) {
+        stars[i].classList.add('active');
+    } else {
+        stars[i].classList.remove('active');
+    }
+}
+}
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

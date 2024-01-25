@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- sign Up page  -->
+
+    <div style=" background:linear-gradient(to bottom, rgba(0,0,0,0), rgb(8,30,46)), url(image/searchbg2.jpg);
+     background-repeat: no-repeat; width: 100%; background-size: cover;   background-repeat: no-repeat;
+    height: 740px;
+    width:100%;
+    background-size: cover;">
+
+        <div>
+            <img class="imgleft" src="Image/movieimg.webp" alt="">
+
+
+            <div class="signinform-box">
+                <div class="form-value">
+                    <form id="mainforms" action="">
+                        <h2>Sign Up</h2>
+                        <div class="inputbox">
+                            <input type="email" required="" id="loginp">
+                            <label for="loginp">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required="" id="naming">
+                            <label for="naming">Full Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" id="passinp" required="">
+                            <label for="passinp">Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="date" required="" id="dateinp" style="color: white;">
+                            <!-- <label for="dateinp">Date  of Birth</label> -->
+                        </div>
+                        <div class="forget">
+                            <label for="checks">
+                                <input type="checkbox" id="checks">Remember Me</label>
+
+                        </div>
+                        <button type="submit" class="button" onclick="handleSignUp()">Sign Up</button>
+                        <div class="register">
+                            <p>Already have an account? <a id="backshow-login" href="login.html">login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="firebase_signup.js" type="module"></script>
+            <!-- <script>
+                function handleSignUp() {
+                    // Your code for linking to the login page
+                    window.location.href = 'login.html';
+
+                    // Your code for executing the Firebase script
+                    // If needed, you can call functions or perform other actions from firebase_signup.js here
+                }
+            </script> -->
+        </div>
+    </div>
+</body>
+
+</html>

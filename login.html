@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- login page -->
+    <div style=" background:linear-gradient(to bottom, rgba(0,0,0,0), rgb(8,30,46)), url(image/searchbg2.jpg);
+    background-repeat: no-repeat; width: 100%; background-size: cover;   background-repeat: no-repeat;
+   height: 740px;
+   width:100%;
+   background-size: cover; ">
+        <div> <img class="imgleft" src="Image/movieimg.webp" alt="">
+            <div>
+               
+                <div class="form-box">
+                    <div class="form-value">
+                        <form id="mainform" action="">
+                            <h2>Login</h2>
+                            <div class="inputbox">
+                                <input id="emailinp" type="email" required="">
+                                <label for="emailinp">Email</label>
+                            </div>
+                            <div class="inputbox">
+                                <input id="passwordinp" type="password" required="">
+                                <label for="passwordinp">Password</label>
+                            </div>
+                            <div class="forget">
+                                <label for="check">
+                                    <input type="checkbox" id="check">Remember Me
+                                </label>
+                                <a style="margin-left: 85px; color: white;" href="#">Forget Password</a>
+
+                            </div>
+                            <button type="submit" class="button">Log in</button>
+                            <div class="register">
+                                <p>Don't have an account? <a id="show-signup" href="signup.html">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <script src="firebase_login.js" type="module"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

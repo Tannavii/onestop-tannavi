@@ -1,0 +1,919 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'sen', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    position:-webkit-sticky;
+    top: 0;
+
+}
+
+
+
+.logo {
+    font-family: 'sen', sans-serif;
+    font-size: 27px;
+}
+
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    box-shadow: 0px 0px 30px rgb(142, 203, 227);
+    padding: 0 50px;
+
+}
+
+.logo-container {
+    flex: 2;
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.menu-container {
+    flex: 6;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+.menu{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu:hover {
+    color: rgb(145, 193, 255);
+    cursor: pointer;
+    transition: 0s;
+    font-weight: bold;
+
+}   
+
+.menu:active{
+    transition: 1s;
+}
+
+.blank {
+    flex: 2
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.watch{
+    font-size: 28px;
+    color: white;
+}
+.watch:hover{
+   color: #716b6b;
+}
+
+.watchlist {
+    font-family: 'sen', sans-serif;
+    color: #716b6b;
+    font-size: 20px;
+    display: flex;
+    gap: 0px;
+}
+
+.en {
+    margin: 7px;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: black;
+    padding-bottom: 4px;
+}
+
+.en:hover {
+    color: black;
+    background-color:#716b6b;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+
+
+.logoimg {
+    height: 63px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+.container {
+    background-color: rgb(15, 15, 15);
+    height: calc(210vh);
+}
+
+.container-login {
+    background-color: rgb(15, 15, 15);
+    height: calc(100vh);
+}
+
+.search-container {
+    width: 100%;
+
+}
+
+.feature-container {
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%;
+    background-size: cover;
+
+
+}
+.middle-container {
+    background-repeat: no-repeat;
+    height: 75vh;
+    /* width: 100%; */
+    background-size: cover;
+}
+
+.feature-containerbtm{
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.hero {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-content {
+    margin: 0px;
+    padding: 80px;
+    align-items: center;
+    margin-left: 0px;
+    padding-left: 200px;
+}
+
+#h1 {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 10px rgb(65, 188, 255);
+}
+
+#h3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.searchbar {
+    height: 45px;
+    width: 1080px;
+    padding: 30px 20px;
+    margin: 20px;
+    padding-left: 0px;
+    display: flex;
+    margin-left: 0px;
+    font-family: 'sen', sans-serif;
+
+}
+
+#searchbox {
+
+    padding: 0px 20px;
+    margin: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 0px;
+    font-family: 'sen', sans-serif;
+    box-shadow: 0px 0px 15px rgb(100, 211, 255);
+}
+
+#searchbox:hover,
+#searchbox:active {
+
+    transition: 0.5s;
+    box-shadow: 0px 0px 25px white;
+}
+
+#searchsub {
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    margin-right: 0px;
+    color: black;
+    border: 0px;
+    box-shadow: 0px 0px 15px rgb(100, 211, 255);
+    font-family: 'sen', sans-serif;
+    background-color: aqua;
+    font-size: 17px;
+
+}
+
+#searchsub:hover,
+#searchsub:active {
+    background-color: rgb(108, 169, 255);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px white;
+    border: 2px solid white;
+
+}
+
+
+
+/* login page css  */
+
+    .form-box {
+        /* border: 2px solid white; */
+        /* position: relative; */
+        width: 450px;
+        height: 550px;
+        /* background-color: rgb(8, 26, 40); */
+        /* background-color: linear-gradient(to bottom, black, rgb(8,30,46)); */
+        /* border: 2px solid rgba(255,255,255,0.5); */
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 75px;
+        right: 150px;
+        position: absolute;
+        opacity: 1;
+        /* top: -150%; */
+        /* left: 37%; */
+        box-shadow: 0px 0px 30px rgb(146, 195, 255);
+        
+    }
+
+
+
+.signinform-box {
+    /* border: 2px solid white; */
+    /* position: relative; */
+    width: 450px;
+    height: 550px;
+    /* background-color: rgb(8, 26, 40); */
+    /* background-color: linear-gradient(to bottom, black, rgb(8,30,46)); */
+    /* border: 2px solid rgba(255,255,255,0.5); */
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75px;
+    right: 150px;
+    position: absolute;
+    opacity: 1;
+    /* top: -150%; */
+    /* left: 37%; */
+    box-shadow: 0px 0px 30px rgb(146, 195, 255);
+
+}
+
+/* .signinform-box.active {
+    opacity: 1;
+    transition: 0.2s;
+    top: 100px;
+
+} */
+
+.imgleft{
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 1350px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    right: 100px;
+    overflow: hidden;
+    background:linear-gradient(to right, rgba(0,0,0,0), rgb(8,30,46))
+    
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.botton:hover{
+    background: rgb(79, 69, 69);
+    color: #716b6b;
+}
+#backshow-login{
+    cursor: pointer;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+#close-btn {
+    right: 20px;
+    top: 20px;
+    height: 15px;
+    width: 15px;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+#sclose-btn {
+    right: 20px;
+    top: 20px;
+    height: 15px;
+    width: 15px;
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    background-color: aqua;
+    text-align: center;
+
+}
+#show-signup{
+    cursor: pointer;
+}
+
+
+/* movie list  */
+
+.movie-list-container1 {
+    padding: 0px 20px;
+    /* position: absolute;
+    top: 500px; */
+
+  }
+  
+  .movie-list-container2 {
+    padding: -1px 20px;
+    /* position: absolute;
+    top: 830px; */
+  }
+  
+  .movie-list-container3 {
+    padding: -1px 20px;
+    /* position: absolute;
+    top: 1160px; */
+  }
+  
+  .movie-list-container4 {
+    padding: 30px 20px;
+    /* position: absolute;
+    top: 1840px; */
+  }
+  
+  .movie-list-container5 {
+    padding: 30px 20px;
+    /* position: absolute;
+    top: 2170px; */
+  }
+  
+  .movie-list-container6 {
+    padding: 30px 20px;
+    /* position: absolute;
+    top: 2500px;
+    overflow: hidden; */
+
+  }
+  
+  .movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-list {
+    display: flex;
+    align-items: center;
+    height: 240px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    /* overflow: auto;
+    scrollbar-width: none; */
+   
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  /* .movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.05);
+    /* margin: 0 20px; 
+    opacity: 1;
+    box-shadow: 0px 0px 20px rgb(103, 103, 103);
+  }*/
+  
+  .movie-list-item:hover .movie-list-item-title,
+  .movie-list-item:hover .movie-list-item-desc,
+  .movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+    transition: 2s  ;
+  }
+
+  .movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .movie-list-item-title {
+    background-color: #a5a5a5;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 2s  all ease-in-out;
+  }
+  
+  .movie-list-item-desc {
+    background-color: #676767;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 2s  all ease-in-out;
+  }
+  
+  .movie-list-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 2s all ease-in-out;
+  }
+  
+  
+  .container.active {
+    background-color: white;
+  }
+  
+  .movie-list-title.active {
+    color: rgb(255, 255, 255);
+  }
+.movie-list-title{
+    color: white;
+    margin: 5px;
+}
+.arrow {
+    font-size: 120px;
+    position:absolute;
+    top: 50px;
+    right: 0;
+    margin-left: 500px;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+    
+
+  }
+  
+  
+ /* BOTTOM CONTACT INFORMATION  */
+
+.bottom-contact{
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    display: flex;
+    width: 100%;
+    height: 270px;
+    
+      
+}
+
+.icon{
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    gap: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    gap: 2px;
+    margin-top: 40px;
+}
+.icon:hover, .icon:active {
+    color: #727272;
+
+}
+
+.bottom-ryt{
+    position: absolute;
+    right: 20px;
+}
+.bottom-ryt a {
+    text-decoration: none;
+}
+
+
+
+/* Add this CSS to your styles.css or in your HTML file */
+
+.movie-list-item-rating {
+    margin-top: 10px;
+}
+
+.rating-text {
+    margin-left: 10px;
+}
+
+.rating-stars {
+    color: #ffe346; /* Set the default star color */
+    font-size: 20px; /* Set the star size */
+    cursor: pointer;
+}
+
+.rating-stars i {
+    margin-left: 5px;
+    padding-left: 12px;
+    opacity: 0.05;
+}
+
+/* Change the color of stars on hover */
+/* .rating-stars i:hover,
+.rating-stars i:hover ~ i {
+    color: #ffda47; /* Set the hover color */
+    /* opacity: 0.8; */
+/* } */
+
+/* Change the color of stars when rated */
+/* .rating-stars i.rated,
+.rating-stars i.rated ~ i {
+    color: #ff8c00; Set the rated color (orange) */
+/* } */
+
+
+
+.rating-stars i.active {
+    opacity: 0.5;
+    color: #ff8c00; /* Set the active (rated) color */
+}
+
+
+
+
+/* heart watchlist  */
+
+.watchlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #5c5c5c;
+    cursor: pointer;
+}
+
+.watchlist-icon.active {
+    color: #ff2222; /* Set the active (added to watchlist) color */
+}
+
+.rating-stars i {
+    color: #ccc; /* Default star color */
+    cursor: pointer;
+    font-size: 20PX;
+}
+
+.rating-stars i.selected {
+    opacity: 0.7;
+    color: #ff1111; /* Selected star color (change as needed) */
+}
+
+.bottom-info {
+    background-color: #000000; /* Background color for the bottom info section */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for the content within the bottom info section */
+}
+
+.additional-info {
+    background-color: rgb(15, 15, 15); /* Background color for the bottom info section */
+    color: #bababa; 
+    text-align: center; /* Center-align the content */
+}
+
+.additional-info p {
+    margin: 0px 0;
+    
+}
+
+html{
+   scroll-behavior: smooth; 
+}
+
+
+
+/* Profile Container Styles */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Profile Info Styles */
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.profile-info:hover{
+    background-color: #333;
+    border-radius: 15px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Other Styles */
+/* .en {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.watchlist {
+    margin-right: 10px;
+} */
+
+#show-logout {
+    background-color: #ff3f1e;
+    color: #fff;
+    border: none;
+    width: 80px;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+#show-logout:hover{
+    background-color: #ff826c;
+}
+
+/* Add additional styles based on your design preferences */
+
+
+
+/* Add styles for the dropdown content */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Add styles for the dropdown content */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9ebbff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-content a {
+    color: rgb(0, 55, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #619ed7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* 
+.bottom-left-info {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+} */
+/* bottom-left-info h3 {
+    color: #fff;
+}
+.bottom-left-info{
+    display: flex;
+}
+
+.contact-us, .about-us {
+    margin-bottom: 20px;
+} */
+
+/* 
+.additional-info {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+} */
+.bottom-left-info {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.bottom-left-info h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-us, .about-us {
+    margin-bottom: 20px;
+}
+
+.contact-us p, .about-us p {
+    margin: 8px 0;
+}
+
+.additional-info {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling links within the contact-us section */
+.contact-us a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #45a049;
+}
